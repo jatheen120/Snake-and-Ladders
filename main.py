@@ -140,12 +140,17 @@ def roll_dice():
 
 def open_word_game():
     subprocess.Popen([sys.executable, "word.py"])
+def open_higher_lower():
+    subprocess.Popen([sys.executable, "higher_lower.py"])
 
 roll_btn = tk.Button(root, text="Roll Dice 🎲", command=roll_dice)
 roll_btn.pack(pady=10)
 
 word_btn = tk.Button(root, text="Play Guess Game 🧠", command=open_word_game)
 word_btn.pack(pady=5)
+
+hl_btn = tk.Button(root, text="Play Higher Lower 🔢", command=open_higher_lower)
+hl_btn.pack(pady=5)
 
 draw_board()
 draw_snakes_ladders()
