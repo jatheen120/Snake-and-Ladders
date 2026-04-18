@@ -40,8 +40,10 @@ class MemoryGame:
             widget.destroy()
 
         for i in range(16):
-            btn = tk.Button(self.frame, text="❓", width=6, height=3,
-                            command=lambda i=i: self.flip(i))
+            btn = tk.Button(self.frame, text="❓",
+                font=("Arial", 24),
+                width=4, height=2,
+                command=lambda i=i: self.flip(i))
             btn.grid(row=i//4, column=i%4)
             self.buttons.append(btn)
 
