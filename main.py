@@ -144,6 +144,8 @@ def open_higher_lower():
     subprocess.Popen([sys.executable, "higher_lower.py"])
 def open_memory_game():
     subprocess.Popen([sys.executable, "memory_game.py"])
+def open_number_game():
+    subprocess.Popen([sys.executable, "number_guess.py"])
 
 
 roll_btn = tk.Button(root, text="Roll Dice 🎲", command=roll_dice)
@@ -157,6 +159,7 @@ hl_btn.pack(pady=5)
 
 mem_btn = tk.Button(root, text="Play Memory Game 🃏", command=open_memory_game)
 mem_btn.pack(pady=5)
+
 
 
 draw_board()
