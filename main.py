@@ -148,20 +148,29 @@ def open_number_game():
     subprocess.Popen([sys.executable, "number_guess.py"])
 
 
-roll_btn = tk.Button(root, text="Roll Dice 🎲", command=roll_dice)
-roll_btn.pack(pady=10)
 
-word_btn = tk.Button(root, text="Play Guess Game 🧠", command=open_word_game)
-word_btn.pack(pady=5)
+btn_frame = tk.Frame(root)
+btn_frame.pack(pady=10)
 
-hl_btn = tk.Button(root, text="Play Higher Lower 🔢", command=open_higher_lower)
-hl_btn.pack(pady=5)
 
-mem_btn = tk.Button(root, text="Play Memory Game 🃏", command=open_memory_game)
-mem_btn.pack(pady=5)
 
-num_btn = tk.Button(root, text="Play Number Guess 🔢", command=open_number_game)
-num_btn.pack(pady=5)
+roll_btn = tk.Button(btn_frame, text="Roll Dice 🎲", command=roll_dice, width=18)
+roll_btn.grid(row=0, column=0, columnspan=3, pady=5)
+
+word_btn = tk.Button(btn_frame, text="Guess 🧠", command=open_word_game, width=15)
+word_btn.grid(row=1, column=0, padx=5, pady=5)
+
+hl_btn = tk.Button(btn_frame, text="Higher 🔢", command=open_higher_lower, width=15)
+hl_btn.grid(row=1, column=1, padx=5, pady=5)
+
+mem_btn = tk.Button(btn_frame, text="Memory 🃏", command=open_memory_game, width=15)
+mem_btn.grid(row=1, column=2, padx=5, pady=5)
+
+num_btn = tk.Button(btn_frame, text="Number 🔢", command=open_number_game, width=15)
+num_btn.grid(row=2, column=0, padx=5, pady=5)
+
+
+
 
 draw_board()
 draw_snakes_ladders()
