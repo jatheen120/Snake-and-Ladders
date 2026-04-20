@@ -160,7 +160,8 @@ hl_btn.pack(pady=5)
 mem_btn = tk.Button(root, text="Play Memory Game 🃏", command=open_memory_game)
 mem_btn.pack(pady=5)
 
-
+num_btn = tk.Button(root, text="Play Number Guess 🔢", command=open_number_game)
+num_btn.pack(pady=5)
 
 draw_board()
 draw_snakes_ladders()
