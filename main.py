@@ -169,7 +169,8 @@ mem_btn.grid(row=1, column=2, padx=5, pady=5)
 num_btn = tk.Button(btn_frame, text="Number 🔢", command=open_number_game, width=15)
 num_btn.grid(row=2, column=0, padx=5, pady=5)
 
-
+rps_btn = tk.Button(btn_frame, text="RPS ✊", command=open_rps, width=15)
+rps_btn.grid(row=2, column=1, padx=5, pady=5)
 
 
 draw_board()
