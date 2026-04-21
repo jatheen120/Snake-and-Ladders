@@ -146,8 +146,8 @@ def open_memory_game():
     subprocess.Popen([sys.executable, "memory_game.py"])
 def open_number_game():
     subprocess.Popen([sys.executable, "number_guess.py"])
-
-
+def open_rps():
+    subprocess.Popen([sys.executable, "rps.py"])
 
 btn_frame = tk.Frame(root)
 btn_frame.pack(pady=10)
