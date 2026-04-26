@@ -148,7 +148,8 @@ def open_number_game():
     subprocess.Popen([sys.executable, "number_guess.py"])
 def open_rps():
     subprocess.Popen([sys.executable, "rps.py"])
-
+def open_ttt():
+    subprocess.Popen([sys.executable, "tictactoe.py"])
 btn_frame = tk.Frame(root)
 btn_frame.pack(pady=10)
 
