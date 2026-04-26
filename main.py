@@ -173,6 +173,8 @@ num_btn.grid(row=2, column=0, padx=5, pady=5)
 rps_btn = tk.Button(btn_frame, text="RPS ✊", command=open_rps, width=15)
 rps_btn.grid(row=2, column=1, padx=5, pady=5)
 
+ttt_btn = tk.Button(btn_frame, text="TicTacToe ❌⭕", command=open_ttt, width=15)
+ttt_btn.grid(row=2, column=2, padx=5, pady=5)
 
 draw_board()
 draw_snakes_ladders()
