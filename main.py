@@ -180,5 +180,5 @@ draw_board()
 draw_snakes_ladders()
 update_tokens()
 
-root.mainloop();
+root.mainloop()
 
